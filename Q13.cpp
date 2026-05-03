@@ -1,0 +1,23 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main() {
+    float a,b,c,d,r1,r2;
+
+    cin>>a>>b>>c;
+
+    d=(b*b)-(4*a*c);
+
+    if(d>=0) {
+        r1=(-b+sqrt(d))/(2*a);
+        r2=(-b-sqrt(d))/(2*a);
+
+        cout<<"Root1 = "<<r1<<endl;
+        cout<<"Root2 = "<<r2;
+    }
+    else
+        cout<<"Imaginary Roots";
+
+    return 0;
+}
